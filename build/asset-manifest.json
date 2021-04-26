@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/clientdoors/static/css/main.3877b90d.chunk.css",
+    "main.js": "/clientdoors/static/js/main.1176e01a.chunk.js",
+    "main.js.map": "/clientdoors/static/js/main.1176e01a.chunk.js.map",
+    "runtime-main.js": "/clientdoors/static/js/runtime-main.e9531aac.js",
+    "runtime-main.js.map": "/clientdoors/static/js/runtime-main.e9531aac.js.map",
+    "static/js/2.16c1ae4a.chunk.js": "/clientdoors/static/js/2.16c1ae4a.chunk.js",
+    "static/js/2.16c1ae4a.chunk.js.map": "/clientdoors/static/js/2.16c1ae4a.chunk.js.map",
+    "static/js/3.9616abdc.chunk.js": "/clientdoors/static/js/3.9616abdc.chunk.js",
+    "static/js/3.9616abdc.chunk.js.map": "/clientdoors/static/js/3.9616abdc.chunk.js.map",
+    "index.html": "/clientdoors/index.html",
+    "static/css/main.3877b90d.chunk.css.map": "/clientdoors/static/css/main.3877b90d.chunk.css.map",
+    "static/js/2.16c1ae4a.chunk.js.LICENSE.txt": "/clientdoors/static/js/2.16c1ae4a.chunk.js.LICENSE.txt",
+    "static/media/1081.jpg": "/clientdoors/static/media/1081.f1be30b0.jpg",
+    "static/media/2508.jpg": "/clientdoors/static/media/2508.69891f1b.jpg",
+    "static/media/5002.jpg": "/clientdoors/static/media/5002.426b615b.jpg",
+    "static/media/5003a.jpg": "/clientdoors/static/media/5003a.12e04047.jpg",
+    "static/media/5004.jpg": "/clientdoors/static/media/5004.fa7d608c.jpg",
+    "static/media/5007.jpg": "/clientdoors/static/media/5007.1f0e760a.jpg",
+    "static/media/6700.jpg": "/clientdoors/static/media/6700.5d678d4c.jpg",
+    "static/media/7007.jpg": "/clientdoors/static/media/7007.e89a4eb6.jpg",
+    "static/media/7700.jpg": "/clientdoors/static/media/7700.e2ba59fd.jpg",
+    "static/media/9000.jpg": "/clientdoors/static/media/9000.0f23efc7.jpg",
+    "static/media/bolunya.jpg": "/clientdoors/static/media/bolunya.3fc2a5f4.jpg",
+    "static/media/doi.jpg": "/clientdoors/static/media/doi.50d46996.jpg",
+    "static/media/like.25191b2f.svg": "/clientdoors/static/media/like.25191b2f.svg",
+    "static/media/provence.jpg": "/clientdoors/static/media/provence.4a0ff4ee.jpg",
+    "static/media/renaissance.jpg": "/clientdoors/static/media/renaissance.d3bc8d68.jpg",
+    "static/media/trio.jpg": "/clientdoors/static/media/trio.f0adbceb.jpg",
+    "static/media/triple.jpg": "/clientdoors/static/media/triple.0a872226.jpg",
+    "static/media/venus.jpg": "/clientdoors/static/media/venus.e0821703.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9531aac.js",
+    "static/js/2.16c1ae4a.chunk.js",
+    "static/css/main.3877b90d.chunk.css",
+    "static/js/main.1176e01a.chunk.js"
+  ]
+}

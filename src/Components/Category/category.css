@@ -1,0 +1,9 @@
+.categories {
+	width: 100%;
+	padding-top: 25%;
+	padding-bottom: 6em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
