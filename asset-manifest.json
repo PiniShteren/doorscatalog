@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/doorscatalog/static/css/main.a83aa39f.chunk.css",
+    "main.js": "/doorscatalog/static/js/main.79157fea.chunk.js",
+    "main.js.map": "/doorscatalog/static/js/main.79157fea.chunk.js.map",
+    "runtime-main.js": "/doorscatalog/static/js/runtime-main.6539e3fc.js",
+    "runtime-main.js.map": "/doorscatalog/static/js/runtime-main.6539e3fc.js.map",
+    "static/js/2.533ed2f8.chunk.js": "/doorscatalog/static/js/2.533ed2f8.chunk.js",
+    "static/js/2.533ed2f8.chunk.js.map": "/doorscatalog/static/js/2.533ed2f8.chunk.js.map",
+    "static/js/3.fc3f7fc1.chunk.js": "/doorscatalog/static/js/3.fc3f7fc1.chunk.js",
+    "static/js/3.fc3f7fc1.chunk.js.map": "/doorscatalog/static/js/3.fc3f7fc1.chunk.js.map",
+    "index.html": "/doorscatalog/index.html",
+    "static/css/main.a83aa39f.chunk.css.map": "/doorscatalog/static/css/main.a83aa39f.chunk.css.map",
+    "static/js/2.533ed2f8.chunk.js.LICENSE.txt": "/doorscatalog/static/js/2.533ed2f8.chunk.js.LICENSE.txt",
+    "static/media/1081.jpg": "/doorscatalog/static/media/1081.f1be30b0.jpg",
+    "static/media/2508.jpg": "/doorscatalog/static/media/2508.69891f1b.jpg",
+    "static/media/5002.jpg": "/doorscatalog/static/media/5002.426b615b.jpg",
+    "static/media/5003a.jpg": "/doorscatalog/static/media/5003a.12e04047.jpg",
+    "static/media/5004.jpg": "/doorscatalog/static/media/5004.fa7d608c.jpg",
+    "static/media/5007.jpg": "/doorscatalog/static/media/5007.1f0e760a.jpg",
+    "static/media/6700.jpg": "/doorscatalog/static/media/6700.5d678d4c.jpg",
+    "static/media/7007.jpg": "/doorscatalog/static/media/7007.e89a4eb6.jpg",
+    "static/media/7700.jpg": "/doorscatalog/static/media/7700.e2ba59fd.jpg",
+    "static/media/9000.jpg": "/doorscatalog/static/media/9000.0f23efc7.jpg",
+    "static/media/contect.css": "/doorscatalog/static/media/‏‏background-1100.addeaee1.PNG",
+    "static/media/bolunya.jpg": "/doorscatalog/static/media/bolunya.3fc2a5f4.jpg",
+    "static/media/doi.jpg": "/doorscatalog/static/media/doi.50d46996.jpg",
+    "static/media/like.25191b2f.svg": "/doorscatalog/static/media/like.25191b2f.svg",
+    "static/media/menu.8729b0db.svg": "/doorscatalog/static/media/menu.8729b0db.svg",
+    "static/media/provence.jpg": "/doorscatalog/static/media/provence.4a0ff4ee.jpg",
+    "static/media/renaissance.jpg": "/doorscatalog/static/media/renaissance.d3bc8d68.jpg",
+    "static/media/trio.jpg": "/doorscatalog/static/media/trio.f0adbceb.jpg",
+    "static/media/triple.jpg": "/doorscatalog/static/media/triple.0a872226.jpg",
+    "static/media/venus.jpg": "/doorscatalog/static/media/venus.e0821703.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6539e3fc.js",
+    "static/js/2.533ed2f8.chunk.js",
+    "static/css/main.a83aa39f.chunk.css",
+    "static/js/main.79157fea.chunk.js"
+  ]
+}
