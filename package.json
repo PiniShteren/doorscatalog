@@ -2,8 +2,9 @@
   "name": "practicework",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pinishteren.github.io/react",
+  "homepage": "https://pinishteren.github.io/doorscatalog",
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
@@ -45,5 +46,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiniShteren/clientdoors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiniShteren/clientdoors/issues"
   }
 }
