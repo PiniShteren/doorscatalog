@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch) => {
 function App(props) {
   const [flag, setFlag] = useState(true);
   useEffect(() => {
-    axios.get('http://localhost:3001/doors')
+    axios.get('http://127.0.0.1:3001/doors')
       .then(({ data }) => {
         console.log(data);
         props.addData(data);
