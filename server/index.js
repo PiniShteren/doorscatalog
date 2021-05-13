@@ -10,36 +10,29 @@ dotenv.config();
 
 const mysql = require('mysql');
 
-const db = mysql.createConnection({
-      connectTimeout: 10,
+const db = mysql.createPool({
+      timeout: 1000,
       host: 'localhost',
       user: 'root',
       password: '',
-      database: process.env.DATABASE,
+      database: "datadoors",
+      port: process.env.PORT
 });
 
-db.connect((err, res) => {
-      if (res) {
-            console.log('Connecting!');
-      }
-});
-
-// app.use("/", (req, res) => {
-
-// })
-
-app.get('/doors', (req, res) => {
+app.use('/doors', (req, res) => {
       var sqlSelcet = 'SELECT * FROM doors';
-      db.query(sqlSelcet, (err, result) => {
-            res.send(result)
-      })
+      var result = (db.query(sqlSelcet, (err, rows) => {
+            return rows;
+      }))();
+      db.end();
+      res.send(result);
 });
-
 app.use('/like', (req, res) => {
       let id = req.body.id;
       let like;
       console.log(id);
       db.query(`SELECT likes FROM doors WHERE id = ${id}`, (err, result) => {
+            if (err) throw err;
             if (result[0].likes > 0) {
                   like = result[0].likes + 1;
             }
@@ -55,5 +48,5 @@ const addLike = (id, like) => {
             if (err) throw err;
       })
 }
-
-app.listen(process.env.PORT, () => console.log('Listen'))
+// db.destroy();
+app.listen(process.env.PORT || 3001, () => console.log('Listen'))
