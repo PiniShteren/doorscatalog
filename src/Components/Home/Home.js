@@ -1,56 +1,77 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "./home.css";
-import { insert } from '../../redux/actions';
-import { connect } from 'react-redux';
-import Like from "../../images/icons/like.svg";
-import axios from 'axios';
+import { connect } from "react-redux";
+import HomeFooter from "../Home-Footer/HomeFooter";
+import { chnageFlag, productShow } from "../../redux/actions";
+const mapStateToProps = (state) => {
+	return {
+		...state,
+		category: state.category.category,
+		doors: state.doors.doors,
+		categories: state.doors.categories,
+	};
+};
 
-const mapStateToProps = (state) => ({
-      doors: state.doors.doors
-});
-const mapDispatchToProps = (dispatch) => {
-      return {
-            addData: item => dispatch(insert(item))
-      }
-}
+const mapPropsToState = (dispatch) => ({
+      product: (item) => dispatch(productShow(item)),
+      changeFlag: () => dispatch(chnageFlag())
+})
+
 function Home(props) {
-      const like = (id) => {
-            console.log('y');
-            axios.post('http://localhost:3001/like', {
-                  id: id
-            }).then((res) => {
-                  console.log(res);
-            }).catch((err) => {
-                  console.log(err);
-            })
-      }
-
-      return (
-            <div className="home">
-                  {props.doors ? props.doors.map((e, i) => {
-                        var img;
-                        var div = " ";
-                        img = require(`../../images/imgdoors/${e.image}.jpg`).default;
-                        div = <div className="img" style={{ backgroundImage: `url(${img})` }} />;
-                        return (
-                              <div className="product" key={i}>
-                                    <div>
-                                          {div}
-                                          <button id="like" onClick={() => {
-                                                like(e.id);
-                                          }}> <img src={Like} alt="like" width="20em" /> {e.likes ? e.likes : 0}</button>
-                                    </div>
-                                    <div className="details">
-                                          <h1>{e.category} - {e.name}</h1>
-                                          <p>{e.description}</p>
-                                    </div>
-                              </div>
-                        )
-                  }) : ""}
-            </div>
-      )
+	const [doorsToPrint, setDoorsToPrint] = useState(props.doors || []);
+      const width = window.innerWidth;
+	const cutDescription = (des) => {
+		let description = "";
+		let count = 0;
+		for (let i = 0; i < des.length; i++) {
+			if (des.charAt(i) === " ") {
+				count++;
+			}
+			if (count === 11) {
+				description = des.slice(0, i);
+				break;
+			} else if (i === des.length - 1) {
+				description = des;
+			}
+		}
+		return <p id="des">{description}...</p>;
+	};
+	useEffect(() => {
+		setDoorsToPrint(props.doors);
+	}, [props.doors]);
+	useEffect(() => {
+		console.log("filter");
+		if (props.category) {
+			let doors = props.doors.filter((e) => e.category == props.category);
+			setDoorsToPrint(doors);
+		}
+	}, [props.category]);
+	return (
+		<div className="home">
+			<div className="doors">
+				{doorsToPrint.length > 0
+					? doorsToPrint.map((e, i) => {
+							return (
+								<div key={i} id="door-item" onClick={() => {props.product(e); props.changeFlag()} }>
+									<h2 id="name-phone">{e.name}</h2>
+									<div
+										id="img"
+										style={{
+											backgroundImage: `url(/imgdoors/${e.image}.jpg)`,
+										}}
+									/>
+									<div id="details-item">
+										{cutDescription(e.description)}
+									</div>
+								</div>
+							);
+					  })
+					: null}
+			</div>
+                  <div>
+                        <HomeFooter cutDescription={cutDescription}/>
+                  </div>
+		</div>
+	);
 }
-export default connect(
-      mapStateToProps,
-      mapDispatchToProps
-)(Home);
+export default connect(mapStateToProps, mapPropsToState)(Home);

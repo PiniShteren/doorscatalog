@@ -1,69 +1,52 @@
-.home {
-	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	padding-top: 30vh;
-	min-height: 100vh;
+.home{
+      width: 100%;
 }
-.product {
-	margin: 0.5em;
-	/* padding: 1em; */
-	box-shadow: 3px 3px 3px rgb(131, 130, 130), 0 0 3px;
-	display: flex;
-	flex-direction: column;
-	width: 60vh;
-	justify-content: space-around;
-	align-items: center;
-}
-.details {
-	font-size: 2.5vh;
-	height: 25vh;
-	max-height: 25vh;
-	overflow: auto;
-	margin-top: 4vh;
-	width: 100%;
-	padding: 3vh;
-	background-color: rgba(58, 180, 77, 0.842);
-}
-.img {
-	width: 10em;
-	height: 12em;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin: 4vh;
-}
-#like {
-	border: none;
-	cursor: pointer;
+.doors{
+      padding: 3vh 0vh 3vh 0vh;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
 }
 
-.details::-webkit-scrollbar {
-	width: 1.5vh;
-}
 
-.details::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+#door-item{
+      margin: 3vh;
+      width: 28vh;
+      height: 45vh;
+      display: flex;
+      padding:0vh 3vh 3vh 3vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 0.1vh;
+      box-shadow: 1px 1px 6px gray, 0 0 1px;
 }
-
-.details::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	outline: 1px solid slategrey;
+#img{
+      width: 30vh;
+      height: 26vh;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
 }
-@media only screen and (max-width: 800px) {
-	.img {
-		width: 8em;
-		height: 10em;
-	}
+#details-item{
+      font-size: 2vh;
+      font-weight: bold;
+      text-align: center;
 }
-@media only screen and (max-width: 550px) {
-	.product {
-		width: 90%;
-	}
-	.img {
-		width: 6em;
-		height: 8em;
-	}
-} ;
+@media only screen and (max-width: 650px) {
+     
+      #door-item{
+            width: 80%;
+            height: 45vh;
+            display: flex;
+            padding:0vh 3vh 3vh 3vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 0.1vh;
+            box-shadow: 1px 1px 10px gray;
+            margin-bottom: 2%;
+      }
+}

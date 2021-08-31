@@ -1,54 +1,26 @@
-.header {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	box-shadow: 0px 1px 5px black, 0 0 2px;
+.header{
+      background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(192, 192, 192));
+      box-shadow: 1px 1px 10px gray, 0 0 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
 }
-.top {
-	width: 100%;
-	background-color: rgb(68, 172, 84);
-	/* padding: 1em; */
+.header h1{
+      color: rgb(194, 194, 194);
+      padding-right: 4vh;
+      text-shadow: 1px 1px 1px #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav {
-	background-color: rgb(68, 172, 84);
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	height: 8vh;
+.btn-menu{
+      display: none;
 }
-.nav-item {
-	text-decoration: none;
-	color: black;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1.5em;
-}
-.navigaition-category {
-	z-index: 1;
-	width: 100%;
-	max-height: 50vh;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.category {
-	width: 50%;
-	border: 1px solid black;
-	font-size: 1.2em;
-	/* font-weight: bold; */
-	background-color: rgb(81, 201, 99);
-	cursor: pointer;
-	color: black;
-	text-decoration: none;
-}
-.category:hover {
-	background-color: rgb(115, 209, 129);
-	color: white;
-}
-.active {
-	background-color: rgb(63, 116, 71);
-	color: white;
-}
-.active-item {
-	text-decoration: underline;
-	font-weight: bold;
+@media only screen and (max-width: 650px) {
+      .btn-menu{
+            display: block;
+            width: 6vh;
+            height: 6vh;
+            margin-left:5vh ;
+            background-size: contain;
+      }
 }

@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Reducers from './redux/reducers/index';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 
 import { HashRouter as Router } from 'react-router-dom';
 const store = createStore(Reducers,

@@ -1,0 +1,59 @@
+.navbar{
+      padding: 3vh 10vh 0vh 10vh;
+      background-color: rgb(243, 243, 243);
+      box-shadow: 3px 3px 6px gray, 0 0 3px;
+      width: 20vh;
+      z-index: -1;
+}
+#nav-item-head{
+      font-weight: bold;
+}
+#nav-item{
+      line-height: 0.5;
+      cursor: pointer;
+}
+#nav-item-active{
+      line-height: 0.5;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: underline;
+}
+#menu{
+      position: fixed;
+      top: 3vh;
+      left: 3vh;
+}
+/*  */
+.navbar-phone{
+      background-color: rgb(92, 92, 92);
+      position: absolute;
+      right: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
+.navbar-phone-item{
+      width: 100%;
+      text-align: center;
+      border-bottom: 0.5px black solid ;
+}
+.navbar-phone-item:active{
+      background-color: black;
+      color: white;
+}
+#navbar-phone-item{
+      font-size: 120%;
+      line-height: 0;
+      font-weight: 600;
+}
+@media only screen and (max-width: 650px) {
+      .navbar{
+            display: none;
+      }
+}
+@media only screen and (min-width: 650px) {
+      .navbar-phone{
+            display: none;
+      }
+}

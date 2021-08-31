@@ -1,5 +1,12 @@
 import { combineReducers } from 'redux';
-import doors from "./doors";
+import {dorsMannage} from "./doors";
+import { changeCategoryData } from './category';
+import {productData} from './product';
+import { menuFlag } from './menu';
+
 export default combineReducers({
-      doors,
+      doors: dorsMannage,
+      category: changeCategoryData,
+      product: productData,
+      flagMenu: menuFlag
 })
