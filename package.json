@@ -2,7 +2,7 @@
   "name": "practicework",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PiniShteren.github.io/doorscatalog",
+  "homepage": "https://PiniShteren.github.io/pini-catalog",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.9",
